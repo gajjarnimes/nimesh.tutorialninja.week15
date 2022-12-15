@@ -1,0 +1,16 @@
+<suite name="testsuite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.tutorialninja.demo.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Login Test">
+        <classes>
+            <class name="com.tutorialninja.demo.testsuite.DesktopTest"></class>
+            <class name="com.tutorialninja.demo.testsuite.HomepageTest"></class>
+            <class name="com.tutorialninja.demo.testsuite.LaptopsAndNotebooksTest"></class>
+            <class name="com.tutorialninja.demo.testsuite.MyAccountTest"></class>
+        </classes>
+    </test>
+</suite>
